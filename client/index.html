@@ -1,0 +1,170 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pulse Shop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">Pulse</span>
+      <span class="tag">Modern Market</span>
+    </div>
+    <nav class="nav">
+      <button class="nav-btn active" data-view="store-view">Store</button>
+      <button class="nav-btn" data-view="admin-view">Admin</button>
+    </nav>
+  </header>
+  <main class="page">
+    <section id="store-view" class="view active">
+      <div class="hero">
+        <div>
+          <p class="eyebrow">New season drop</p>
+          <h1>Design-forward goods for people who love the details.</h1>
+          <p class="sub">Curated essentials, shipped fast. Every order is tracked and stored in our live demo database.</p>
+          <div class="hero-actions">
+            <button class="primary" id="scroll-to-products">Shop products</button>
+            <button class="ghost" id="clear-cart">Clear cart</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="metric">
+            <span>In stock</span>
+            <strong id="stock-count">0</strong>
+          </div>
+          <div class="metric">
+            <span>Products</span>
+            <strong id="product-count">0</strong>
+          </div>
+          <div class="metric">
+            <span>Orders today</span>
+            <strong id="order-count">0</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="layout">
+        <section class="catalog" id="catalog">
+          <h2>Catalog</h2>
+          <div class="grid" id="product-grid"></div>
+        </section>
+        <aside class="cart-panel">
+          <div class="cart-header">
+            <h2>Your cart</h2>
+            <span id="cart-count">0 items</span>
+          </div>
+          <div id="cart-items" class="cart-items"></div>
+          <div class="cart-total">
+            <span>Total</span>
+            <strong id="cart-total">$0.00</strong>
+          </div>
+          <form id="checkout-form" class="checkout">
+            <h3>Checkout</h3>
+            <label>
+              Full name
+              <input type="text" name="name" required placeholder="Jordan Lee">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" required placeholder="jordan@email.com">
+            </label>
+            <button class="primary" type="submit">Place order</button>
+            <p class="hint" id="checkout-message"></p>
+          </form>
+        </aside>
+      </div>
+    </section>
+
+    <section id="admin-view" class="view">
+      <div class="admin-wrap">
+        <div class="admin-card" id="admin-login-card">
+          <h2>Admin login</h2>
+          <p class="sub">Manage products and review orders.</p>
+          <form id="admin-login-form">
+            <label>
+              Email
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Password
+              <input type="password" name="password" required>
+            </label>
+            <button class="primary" type="submit">Sign in</button>
+            <p class="hint" id="admin-login-message"></p>
+          </form>
+          <div class="admin-creds">
+            <p>Default credentials:</p>
+            <p><strong>admin@example.com</strong> / <strong>admin123</strong></p>
+          </div>
+        </div>
+
+        <div class="admin-panel hidden" id="admin-panel">
+          <div class="admin-header">
+            <div>
+              <h2>Inventory</h2>
+              <p class="sub">Add products, update stock, and review recent orders.</p>
+            </div>
+            <button class="ghost" id="admin-logout">Log out</button>
+          </div>
+
+          <div class="admin-grid">
+            <div class="admin-section">
+              <h3>Add product</h3>
+              <form id="admin-product-form" class="stack">
+                <label>
+                  Name
+                  <input type="text" name="name" required>
+                </label>
+                <label>
+                  Category
+                  <input type="text" name="category" required>
+                </label>
+                <label>
+                  Price (USD)
+                  <input type="number" name="price" min="0" step="0.01" required>
+                </label>
+                <label>
+                  Stock
+                  <input type="number" name="stock" min="0" step="1" required>
+                </label>
+                <label>
+                  Image URL
+                  <input type="text" name="image_url" required>
+                </label>
+                <label>
+                  Description
+                  <textarea name="description" rows="3" required></textarea>
+                </label>
+                <button class="primary" type="submit">Create product</button>
+                <p class="hint" id="admin-product-message"></p>
+              </form>
+            </div>
+
+            <div class="admin-section">
+              <div class="section-row">
+                <h3>Products</h3>
+                <button class="ghost" id="admin-refresh-products">Refresh</button>
+              </div>
+              <div class="list" id="admin-product-list"></div>
+            </div>
+
+            <div class="admin-section">
+              <div class="section-row">
+                <h3>Recent orders</h3>
+                <button class="ghost" id="admin-refresh-orders">Refresh</button>
+              </div>
+              <div class="list" id="admin-order-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
