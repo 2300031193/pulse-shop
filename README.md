@@ -1,5 +1,7 @@
 ﻿# Pulse Shop
 
+![Pulse Shop Logo](assets/logo.svg)
+
 A full-stack ecommerce starter built with Node.js, Express, SQLite, and a custom vanilla frontend.
 
 ## Run locally
@@ -17,6 +19,14 @@ npm start
 ```
 
 3. Open `http://localhost:3000` in your browser.
+
+## Screenshots
+
+Storefront:
+![Storefront](assets/screenshot-store.svg)
+
+Admin dashboard:
+![Admin dashboard](assets/screenshot-admin.svg)
 
 ## Admin access
 

@@ -1,0 +1,26 @@
+﻿<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff8ef"/>
+      <stop offset="0.5" stop-color="#f1e6ff"/>
+      <stop offset="1" stop-color="#e9f1ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg)"/>
+  <rect x="60" y="50" width="1080" height="88" rx="28" fill="#ffffff" stroke="#1f1c19" stroke-opacity="0.08"/>
+  <text x="100" y="108" font-family="'Fraunces', Georgia, serif" font-size="36" fill="#1f1c19">Pulse</text>
+  <text x="200" y="108" font-family="'Space Grotesk', Arial, sans-serif" font-size="14" letter-spacing="4" fill="#5b5754">MODERN MARKET</text>
+  <rect x="60" y="170" width="700" height="420" rx="32" fill="#ffffff" stroke="#1f1c19" stroke-opacity="0.08"/>
+  <rect x="800" y="170" width="340" height="420" rx="32" fill="#ffffff" stroke="#1f1c19" stroke-opacity="0.08"/>
+  <rect x="90" y="205" width="220" height="180" rx="20" fill="#ffe1d1"/>
+  <rect x="330" y="205" width="220" height="180" rx="20" fill="#d7e8ff"/>
+  <rect x="570" y="205" width="160" height="180" rx="20" fill="#f0e6ff"/>
+  <rect x="90" y="415" width="220" height="150" rx="20" fill="#f6f2ff"/>
+  <rect x="330" y="415" width="220" height="150" rx="20" fill="#ffe8c7"/>
+  <rect x="570" y="415" width="160" height="150" rx="20" fill="#e0f1ff"/>
+  <rect x="830" y="210" width="280" height="40" rx="18" fill="#ff6a3d"/>
+  <rect x="830" y="270" width="280" height="240" rx="22" fill="#f8f7f5"/>
+  <rect x="830" y="530" width="280" height="50" rx="22" fill="#1e88e5"/>
+  <text x="860" y="240" font-family="'Space Grotesk', Arial, sans-serif" font-size="16" fill="#ffffff">Your Cart</text>
+  <text x="860" y="560" font-family="'Space Grotesk', Arial, sans-serif" font-size="16" fill="#ffffff">Checkout</text>
+</svg>
