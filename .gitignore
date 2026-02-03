@@ -1,4 +1,7 @@
 ﻿node_modules/
 server/data.db
+server/data.db-*
+server/*.db
+server/*.db-*
 .env
 .DS_Store
